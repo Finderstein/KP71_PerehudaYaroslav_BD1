@@ -41,8 +41,6 @@ CREATE TABLE public."Readers"
 (
     "ReaderID" integer NOT NULL DEFAULT nextval('"Readers_ReaderID_seq"'::regclass),
     "Name" text COLLATE pg_catalog."default" NOT NULL,
-    "AlreadyRead" text[] COLLATE pg_catalog."default",
-    "ReadingNow" text[] COLLATE pg_catalog."default",
     "PhoneNumber" text COLLATE pg_catalog."default",
     "Adress" text COLLATE pg_catalog."default",
     CONSTRAINT "ReaderIDPK" PRIMARY KEY ("ReaderID")
